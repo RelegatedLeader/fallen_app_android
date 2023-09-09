@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".signed_in_menu"
+    android:background="@color/fallen">
+
+    <!-- Breadcrumb Layout -->
+
+    <RelativeLayout
+        android:id="@+id/breadcrumb_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/breadcrumb_logo"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50px"
+            android:clickable="true"
+            android:onClick="showPopupMenu"
+            android:src="@drawable/fallen_logo_2" />
+
+        <!-- "About Us" Item -->
+
+        <!-- "Goals" Item -->
+        <TextView
+            android:id="@+id/breadcrumb_for_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="100px"
+            android:layout_toRightOf="@+id/breadcrumb_logo"
+            android:text="For You"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/breadcrumb_newProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="100px"
+            android:layout_toRightOf="@+id/breadcrumb_for_you"
+            android:text="New Products"
+            android:textColor="@android:color/white" />
+
+        <!-- "Contact" Item -->
+        <TextView
+            android:id="@+id/breadcrumb_FALLEN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="100px"
+            android:layout_toRightOf="@+id/breadcrumb_newProducts"
+            android:text="FALLEN+"
+            android:textStyle="bold"
+            android:textColor="#Cbc45a" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="7dp"
+            android:scrollbarSize="50px"
+            android:src="@drawable/futuristic_cart"
+            android:id="@+id/shopping_cart"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/video_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/breadcrumb_layout"
+        android:layout_centerHorizontal="true">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="700px"
+            android:layout_marginTop="100dp" />
+
+        <TextView
+            android:id="@+id/new_releases_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Most Popular "
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/videoView"
+            android:layout_marginTop="30px"
+            android:layout_marginBottom="20px"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/item_list_1"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_below="@+id/new_releases_textView"
+        android:layout_marginTop="450dp"
+        android:backgroundTint="@color/white"
+
+        >
+
+        <ImageView
+            android:id="@+id/smart_contact_lens"
+            android:layout_width="500px"
+            android:layout_height="320px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/smart_contact_lens1" />
+
+        <ImageView
+            android:id="@+id/bionic_arms"
+            android:layout_width="500px"
+            android:layout_height="320px"
+            android:layout_below="@+id/smart_contact_lens"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/bionic_printer_for_arms" />
+
+        <ImageView
+            android:id="@+id/neural_lace"
+            android:layout_width="500px"
+            android:layout_height="320px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/smart_contact_lens"
+            android:src="@drawable/neural_lace" />
+
+        <ImageView
+            android:layout_width="500px"
+            android:layout_height="320px"
+            android:layout_below="@+id/neural_lace"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/bionic_arms"
+            android:src="@drawable/nano_suit" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+
+
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

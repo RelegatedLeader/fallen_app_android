@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/fallen"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/fallen_logo"
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100px"
+        android:src="@drawable/fallen_logo_2" /> <!-- Replace with your actual drawable resource name -->
+
+    <TextView
+        android:id="@+id/un"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fallen_logo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20px"
+        android:text="Username" />
+    <EditText
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/un"
+        android:layout_centerInParent="true"
+        android:id="@+id/un_tv"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_below="@+id/un_tv"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20px"
+        android:id="@+id/pw"
+
+        />
+
+
+    <EditText
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pw"
+        android:layout_centerInParent="true"
+        android:id="@+id/pw_tv"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pw_tv"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/white"
+        android:text="Sign In"
+        android:textColor="@color/black"
+        android:layout_marginTop="15px"
+        android:id="@+id/sign_in"
+
+
+        />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="@color/white"
+        android:layout_below="@+id/sign_in"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
