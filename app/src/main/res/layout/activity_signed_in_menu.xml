@@ -64,7 +64,10 @@
             android:layout_toRightOf="@+id/breadcrumb_newProducts"
             android:text="FALLEN+"
             android:textStyle="bold"
-            android:textColor="#Cbc45a" />
+            android:textColor="#Cbc45a"
+
+
+            />
 
         <ImageView
             android:layout_width="35dp"

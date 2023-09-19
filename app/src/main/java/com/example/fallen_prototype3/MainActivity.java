@@ -3,6 +3,7 @@ package com.example.fallen_prototype3;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    private ImageView logo;
+
+
+    private ImageView logo, google_button, facebook_button, nasa_button, github_button;
 
 
     @Override
@@ -34,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         logo = findViewById(R.id.fallen_logo);
         set_menu_buttons();
+        set_login_buttons();
     }
 
     public boolean admin_sign_in() {
@@ -48,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void set_menu_buttons() {
         Button login_button = findViewById(R.id.sign_in);
+
+
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -104,9 +110,77 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        TextView guest = findViewById(R.id.guest);
+        guest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(MainActivity.this, signed_in_menu.class) );
+                Toast.makeText(MainActivity.this, "Welcome Eagle!", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
 
+
+
+
+    }
+
+
+    public void set_login_buttons(){
+        //setting the 4 sign in buttons - google,fb, nasa, github
+
+        google_button = findViewById(R.id.googleButton);
+        facebook_button = findViewById(R.id.facebookButton);
+        nasa_button = findViewById(R.id.nasaButton);
+        github_button = findViewById(R.id.githubButton);
+
+
+
+
+        google_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://www.google.com"; // Note that the URL should include "https://" or "http://"
+
+                // Create an Intent with ACTION_VIEW and the URL as the data.
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+
+                // Start the activity (web browser) to open the URL.
+                startActivity(intent);
+            }
+        });
+
+
+        facebook_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://www.facebook.com";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent);
+
+            }
+        });
+
+
+        nasa_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://www.nasa.gov";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent);
+            }
+        });
+
+        github_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://www.github.com";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent);
+            }
+        });
 
     }
 }

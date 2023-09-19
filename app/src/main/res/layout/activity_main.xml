@@ -5,17 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/fallen"
-
-    >
+    android:background="@color/fallen">
 
 
     <ImageView
+
         android:id="@+id/fallen_logo"
         android:layout_width="500px"
         android:layout_height="500px"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="100px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200px"
         android:src="@drawable/fallen_logo_2" /> <!-- Replace with your actual drawable resource name -->
 
     <TextView
@@ -24,17 +23,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/fallen_logo"
         android:layout_centerInParent="true"
-        android:layout_marginTop="20px"
+        android:layout_marginTop="15px"
         android:text="Username" />
+
     <EditText
+        android:id="@+id/un_tv"
         android:layout_width="400px"
         android:layout_height="wrap_content"
         android:layout_below="@+id/un"
-        android:layout_centerInParent="true"
-        android:id="@+id/un_tv"
-        />
-
-
+        android:layout_centerInParent="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -43,19 +40,14 @@
         android:layout_below="@+id/un_tv"
         android:layout_centerInParent="true"
         android:layout_marginTop="20px"
-        android:id="@+id/pw"
-
-        />
-
+        android:id="@+id/pw" />
 
     <EditText
         android:layout_width="400px"
         android:layout_height="wrap_content"
         android:layout_below="@+id/pw"
         android:layout_centerInParent="true"
-        android:id="@+id/pw_tv"
-
-        />
+        android:id="@+id/pw_tv" />
 
     <Button
         android:layout_width="wrap_content"
@@ -66,10 +58,7 @@
         android:text="Sign In"
         android:textColor="@color/black"
         android:layout_marginTop="15px"
-        android:id="@+id/sign_in"
-
-
-        />
+        android:id="@+id/sign_in" />
 
     <TextView
         android:id="@+id/forgot_password"
@@ -81,13 +70,77 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up with email"
+        android:textColor="@color/white"
+        android:layout_below="@+id/forgot_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am a guest"
+        android:textColor="@color/white"
+        android:layout_below="@+id/sign_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
         android:focusable="true"
-        />
+        android:id="@+id/guest"
+/>
+    <!-- Your LinearLayout for buttons -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guest"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/googleButton"
+            android:layout_width="100px"
+            android:layout_height="48dp"
+            android:layout_marginTop="25px"
+            android:src="@drawable/google_button" />
+        <ImageView
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@drawable/facebook_button"
+            android:layout_marginTop="25px"
+            android:layout_marginLeft="15px"
+            android:id="@+id/facebookButton"/>
+
+        <ImageView
+            android:id="@+id/nasaButton"
+            android:layout_width="34dp"
+            android:layout_height="100px"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="25px"
+            android:src="@drawable/nasa_button" />
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:src="@drawable/github_button"
+            android:layout_marginTop="25px"
+            android:layout_marginLeft="15px"
+            android:id="@+id/githubButton"
+            />
 
 
 
+    </LinearLayout>
 
-
-
+    <!-- Other views in your RelativeLayout -->
 
 </RelativeLayout>

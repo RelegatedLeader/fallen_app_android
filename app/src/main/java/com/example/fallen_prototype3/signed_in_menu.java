@@ -21,6 +21,8 @@ public class signed_in_menu extends AppCompatActivity {
 
     private VideoView video;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +54,7 @@ cart.setOnClickListener(new View.OnClickListener() {
 
 
         turn_video_on();
+        set_cart_button(); //set the cart button
     }
 
     public void showPopupMenu(View view) {
@@ -133,6 +136,17 @@ cart.setOnClickListener(new View.OnClickListener() {
                 // Restart the video from the beginning
                 video.seekTo(0);
                 video.start();
+            }
+        });
+    }
+
+
+    public void set_cart_button(){
+        FALLEN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(signed_in_menu.this, shopping_cart.class));
             }
         });
     }
