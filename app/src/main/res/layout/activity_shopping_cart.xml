@@ -1,9 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".shopping_cart">
+    tools:context=".shopping_cart"
+    android:background="#5497CD"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="100px"
+        android:text="Total: $0.00"
+    android:textColor="@color/white"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50px"
+    android:id="@+id/total"
+    />
+
+    <CheckBox
+        android:id="@+id/itemCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total"
+        android:text="This is an item"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name: "
+    android:textColor="@color/white"
+    android:layout_below="@+id/itemCheckBox"
+    android:id="@+id/itemNameTextView"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: $"
+    android:textColor="@color/white"
+    android:layout_below="@+id/itemNameTextView"
+    android:id="@+id/itemPriceTextView"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity: "
+    android:textColor="@color/white"
+    android:layout_below="@+id/itemPriceTextView"
+    android:id="@+id/itemQuantityTextView"
+    />
+
+    <Button
+        android:layout_marginTop="50px"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_below="@id/itemQuantityTextView"
+        android:text="Pay Now"
+        android:id="@+id/pay_button"
+        android:backgroundTint="@color/black"
+android:textColor="@color/white"
+
+
+        />
+
+</RelativeLayout>

@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText username;
     private EditText password;
-
+    private TextView sign_up;
 
 
 
@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         logo = findViewById(R.id.fallen_logo);
         set_menu_buttons();
         set_login_buttons();
+        activate_sign_up();
     }
 
     public boolean admin_sign_in() {
@@ -183,4 +184,19 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+    public void activate_sign_up(){
+
+sign_up = findViewById(R.id.sign_up);
+sign_up.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        startActivity(new Intent(MainActivity.this, sign_up.class));
+    }
+});
+
+    }
+
+
+
 }

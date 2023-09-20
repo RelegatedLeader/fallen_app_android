@@ -19,8 +19,7 @@
         android:textColor="@android:color/white"
         android:textStyle="bold"
         android:layout_marginTop="100dp"
-        android:fontFamily="@font/font_family"/>
-
+/>
     <!-- Divider -->
     <View
         android:layout_width="match_parent"
@@ -42,8 +41,7 @@
         android:textStyle="bold"
         android:layout_below="@+id/settings_view"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/font_family"/>
-
+        />
     <!-- Divider -->
     <View
         android:layout_width="match_parent"
@@ -65,8 +63,7 @@
         android:textStyle="bold"
         android:layout_below="@+id/notifications_view"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/font_family"/>
-
+        />
     <!-- Divider -->
     <View
         android:layout_width="match_parent"
@@ -88,8 +85,7 @@
         android:textStyle="bold"
         android:layout_below="@+id/account_view"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/font_family"/>
-
+        />
     <!-- Divider -->
     <View
         android:layout_width="match_parent"
@@ -111,8 +107,7 @@
         android:textStyle="bold"
         android:layout_below="@+id/payment_view"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/font_family"/>
-
+        />
     <!-- Divider -->
     <View
         android:layout_width="match_parent"
@@ -134,8 +129,7 @@
         android:textStyle="bold"
         android:layout_below="@+id/privacy_view"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/font_family"/>
-
+        />
     <!-- Divider -->
     <View
         android:layout_width="match_parent"
@@ -156,6 +150,5 @@
         android:textColor="@android:color/white"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/font_family"/>
-
+        />
 </RelativeLayout>

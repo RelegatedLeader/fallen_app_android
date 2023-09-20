@@ -46,7 +46,8 @@ public class signed_in_menu extends AppCompatActivity {
 cart.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-
+    Intent intent = new Intent(signed_in_menu.this, shopping_cart.class);
+    startActivity(intent);
     }
 });
         // Call the method to set up click listeners for other TextViews
@@ -146,7 +147,7 @@ cart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(signed_in_menu.this, shopping_cart.class));
+                startActivity(new Intent(signed_in_menu.this, fallen_subscription.class));
             }
         });
     }

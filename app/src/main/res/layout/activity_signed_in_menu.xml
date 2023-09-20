@@ -23,6 +23,7 @@
 
         <!-- Logo -->
         <ImageView
+
             android:id="@+id/breadcrumb_logo"
             android:layout_width="80dp"
             android:layout_height="100dp"
@@ -31,9 +32,15 @@
             android:onClick="showPopupMenu"
             android:src="@drawable/fallen_logo_2" />
 
-        <!-- "About Us" Item -->
-
-        <!-- "Goals" Item -->
+        <ImageView
+            android:layout_marginTop="100px"
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:onClick="showPopupMenu"
+            android:id="@+id/dropdown_symbol"
+            android:src="@drawable/drop_down_white"
+            android:layout_toRightOf="@+id/breadcrumb_logo"
+            />
         <TextView
             android:id="@+id/breadcrumb_for_you"
             android:layout_width="wrap_content"

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5497CD"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="wrap_content"
+        android:layout_height="350px"
+        android:src="@drawable/j3rry_img"
+        android:layout_marginBottom="20px"
+
+        />
+
+    <TextView
+        android:id="@+id/subscription_details1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join now and get a free J3-RRY!"
+        android:textSize="50px"
+
+        />
+    <TextView
+        android:id="@+id/subscription_details2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Also save on 20% on shipping"
+
+        android:textSize="50px"
+
+        />
+
+    <TextView
+        android:id="@+id/subscription_details3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Access the finest software/hardware code"
+
+        android:textSize="50px"
+
+        />
+
+    <TextView
+        android:id="@+id/subscription_details4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Save BIG on anything FALLEN+ "
+
+        android:textSize="50px"
+
+        />
+    <TextView
+        android:id="@+id/subscription_details5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Join a community of 2 Billion + Users! "
+
+        android:textSize="50px"
+
+        />
+
+
+
+
+    <Button
+        android:id="@+id/join_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join Now!"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+
+        />
+
+<Button
+android:id="@+id/close_button"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Close"
+    android:backgroundTint="@color/black"
+    android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
