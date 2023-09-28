@@ -3,10 +3,12 @@ package com.example.fallen_prototype3;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.PopupMenu;
 
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -40,7 +42,14 @@ public class signed_in_menu extends AppCompatActivity {
         logo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                if (vibrator.hasVibrator()) {
+                    // Vibrate for 100 milliseconds (adjust the duration as needed)
+                    vibrator.vibrate(80);
+                }
+
                 showPopupMenu(view);
+
             }
         });
 cart.setOnClickListener(new View.OnClickListener() {
@@ -97,7 +106,8 @@ cart.setOnClickListener(new View.OnClickListener() {
         new_products.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Define behavior for the "Goals" TextView click
+                Intent intent = new Intent(signed_in_menu.this, new_products.class);
+                startActivity(intent);
             }
         });
 
